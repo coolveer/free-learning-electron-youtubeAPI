@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style type="text/css">
+      .sdo:hover{
+        width: 250px;
+        box-shadow: 10px 10px 88px 11px rgba(0,0,0,0.75);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br> <br>
+  <!-- navigation bar  -->
+   <nav class="navbar navbar-light bg-light fixed-top" style="-webkit-app-region: drag">
+    <span class="navbar-brand mb-0 h1" >Pu Advance Learning System</span>
+    
+    <ul class="navbar-nav flex-row ml-md-auto  d-md-flex">
+        <li class="nav-item" id="mini" style="-webkit-app-region:no-drag; color:blue;"><a href="#">Minimize</a></li> &nbsp &nbsp &nbsp
+        <li class="nav-item" id="maxi" style="-webkit-app-region:no-drag; color:green;"><a href="#">Maximise</a></li>&nbsp &nbsp &nbsp
+        <li class="nav-item" id="close" style="-webkit-app-region:no-drag; color:red;"><a href="#">Close</a></li>
+
+    </ul>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+    <div class="col-md-9">
+      <!-- youtube video player -->
+      <span id="player" class="sdo"></span>
+      <!-- youtube player ends here  -->
+      <span style="display: none;" id="loading">
+      <p>Downloading please wait.....</p>
+      <img src="./image/143.gif" style="height: 60px; width: 100%;">
+      </span>
+      <div class="row">
+
+        <div class="col">
+          <div class="btn btn-info btn-lg btn-block" id="dwnld">Download</div>
+        </div>
+
+      </div>
+        <form id="nodata">
+          <div class="form-group">
+            <textarea class="form-control" id="ndata" rows="3" placeholder="Write your notes here and click save buttion save the written notes"></textarea>
+          </div>
+        </form>
+        <div class="btn btn-info btn-lg btn-block" id="savedata">Save</div>
+    </div>
+    <div class="col-md-3 " style="overflow: scroll; height: 100vh;" >
+      <a href="profile.html"><div class="btn btn-info btn-lg btn-block"> Back To profile</div></a>
+      <h1 style="font-family: 'Ma Shan Zheng'">Realated videos:</h1>
+      <!-- suggested videos will be start from here  -->
+        <!-- from here the results will be shown  -->
+        <span >
+        <div id="replace"></div>
+        <div id="replace0"></div>
+        <div id="replace1"></div>
+        <div id="replace2"></div>
+        <div id="replace3"></div>
+        <div id="replace4"></div>
+        <div id="replace5"></div>
+        <div id="replace6"></div>
+        <div id="replace7"></div>
+        <br>
+        <button class="btn btn-info btn-lg btn-block" id="moreVid">load more videos</button>
+      </span>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="popper.min.js"></script>    
+    <script type="text/javascript">
+      var $ = require('jquery');
+      window.$ = $;
+      require('bootstrap');
+    </script>
+    <script type="text/javascript">
+      require('./fawa.js');
+    </script>
+  </body>
+</html>

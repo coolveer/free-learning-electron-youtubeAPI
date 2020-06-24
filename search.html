@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body style="background-color: maroon">
+    <br> <br>
+  <!-- navigation bar  -->
+  <nav class="navbar navbar-light bg-light fixed-top" style="-webkit-app-region: drag">
+    <span class="navbar-brand mb-0 h1" >Pu Advance Learning System</span>
+    
+    <ul class="navbar-nav flex-row ml-md-auto  d-md-flex">
+        <li class="nav-item" id="mini" style="-webkit-app-region:no-drag; color:blue;"><a href="#">Minimize</a></li> &nbsp &nbsp &nbsp
+        <li class="nav-item" id="maxi" style="-webkit-app-region:no-drag; color:green;"><a href="#">Maximise</a></li>&nbsp &nbsp &nbsp
+        <li class="nav-item" id="close" style="-webkit-app-region:no-drag; color:red;"><a href="#">Close</a></li>
+
+    </ul>
+  </nav>
+  <a href="profile.html"><div class="btn btn-info btn-lg btn-block"> Back To Profile</div></a>
+    <br> <br>
+
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+          <input class="form-control" type="text" id="srch" placeholder ="enter the topic you wan to search."><br>
+          <button class="btn btn-primary btn-lg btn-block" id="srchBtn">search</button>
+      </div>
+      <hr>
+      <div class="col-md-4"></div>
+    </div>
+
+
+
+    <script type="text/javascript" src="popper.min.js"></script>    
+    <script type="text/javascript">
+      var $ = require('jquery');
+      window.$ = $;
+      require('bootstrap');
+    </script>
+    <script type="text/javascript">
+      require('./srch.js');
+    </script>
+  </body>
+</html>

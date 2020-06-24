@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+  <br> <br>
+  <!-- navigation bar  -->
+  <nav class="navbar navbar-light bg-light fixed-top" style="-webkit-app-region: drag">
+    <span class="navbar-brand mb-0 h1" >Pu Advance Learning System</span>
+    
+    <ul class="navbar-nav flex-row ml-md-auto  d-md-flex">
+        <li class="nav-item" id="mini" style="-webkit-app-region:no-drag; color:blue;"><a href="#">Minimize</a></li> &nbsp &nbsp &nbsp
+        <li class="nav-item" id="maxi" style="-webkit-app-region:no-drag; color:green;"><a href="#">Maximise</a></li>&nbsp &nbsp &nbsp
+        <li class="nav-item" id="close" style="-webkit-app-region:no-drag; color:red;"><a href="#">Close</a></li>
+
+    </ul>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img style="width: 100%; height: 100%;" src="./image/21.png">
+      </div>
+      <div class="col-md-8">
+        <h3>Name : <span id="name"></span> </h3><br>
+        <h3>Date Of Birth : <span id="dob"></span></h3><br>
+        <h3>Mobile Number: <span id="mob"></span></h3><br>
+        <h3>college/school: <span id="clg"></span></h3><br>
+        <h3>Roll Number : <span id="roll"></span></h3><br>
+        <h3>course : <span id="stream"></span></h3>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="search.html">
+          <div class="btn btn-info btn-lg btn-block">Search a course</div>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="search.html">
+          <div class="btn btn-info btn-lg btn-block">Search for a topic</div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="overflow: scroll; height: 35vh;">
+          <h1 style="font-family: 'Ma Shan Zheng'">favourates:</h3>
+          <span id="favbar"></span>
+      </div>
+      <div class="col-md-6" style="overflow: scroll; height: 35vh;">
+          <h1 style="font-family: 'Ma Shan Zheng'">watch later:</h3>
+          <span id="wabar"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="popper.min.js"></script>    
+    <script type="text/javascript">
+      var $ = require('jquery');
+      window.$ = $;
+      require('bootstrap');
+    </script>
+    <script type="text/javascript">
+      require('./profile.js');
+    </script>
+  </body>
+</html>
