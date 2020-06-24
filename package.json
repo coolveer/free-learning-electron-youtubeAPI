@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mongodb": "^3.5.2",
     "popper.js": "^1.14.3",
     "simple-youtube-api": "^5.2.1",
